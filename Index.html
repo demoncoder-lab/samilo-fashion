@@ -1,0 +1,1243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f7f3ed">
+<meta name="description" content="Atelier Nia — Contemporary African couture, bespoke tailoring and timeless elegance.">
+<title>SAMILO | Designed to Be Remembered</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --cream: #f7f3ed;
+  --dark: #201d19;
+  --muted: #77716a;
+  --gold: #a77c4d;
+  --white: #ffffff;
+  --line: #e5ded4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--dark);
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+/* NAVIGATION */
+
+header {
+  height: 82px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(247,243,237,.96);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--line);
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 27px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.logo span {
+  color: var(--gold);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-links a {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  transition: color .3s;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.nav-cta {
+  border: 1px solid var(--dark);
+  padding: 12px 19px;
+  font-size: 11px !important;
+  letter-spacing: 1.5px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: var(--dark);
+}
+
+/* HERO */
+
+.hero {
+  min-height: 650px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 65px 7%;
+  gap: 50px;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 550px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(48px, 6vw, 82px);
+  line-height: 1.08;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.hero h1 em {
+  color: var(--gold);
+  font-weight: 400;
+}
+
+.hero-description {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.9;
+  max-width: 400px;
+  margin-bottom: 35px;
+}
+
+.primary-btn {
+  display: inline-block;
+  padding: 17px 29px;
+  background: var(--dark);
+  color: white;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: .3s;
+  border: 1px solid var(--dark);
+}
+
+.primary-btn:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+.secondary-btn {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 5px;
+}
+
+.hero-image {
+  position: relative;
+  height: 530px;
+}
+
+.hero-image img {
+  height: 100%;
+  object-position: center 25%;
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 22px;
+  left: -25px;
+  background: var(--cream);
+  padding: 18px 25px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 15px;
+}
+
+/* MARQUEE */
+
+.marquee {
+  padding: 24px 0;
+  background: var(--dark);
+  color: var(--cream);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: move 28s linear infinite;
+}
+
+.marquee span {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  padding: 0 35px;
+}
+
+.marquee span b {
+  color: var(--gold);
+  font-weight: 400;
+}
+
+@keyframes move {
+  to { transform: translateX(-50%); }
+}
+
+/* SECTION GENERAL */
+
+section {
+  padding: 105px 7%;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.section-heading h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(34px, 4vw, 49px);
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.section-heading p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* COLLECTION */
+
+.collection {
+  background: #fffdfa;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.collection-card {
+  cursor: pointer;
+}
+
+.collection-image {
+  height: 410px;
+  overflow: hidden;
+  position: relative;
+  background: #e9e1d6;
+}
+
+.collection-image img {
+  height: 100%;
+  transition: transform .7s;
+}
+
+.collection-card:hover img {
+  transform: scale(1.06);
+}
+
+.collection-info {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collection-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.collection-info span {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+/* ABOUT */
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.about-image {
+  height: 550px;
+}
+
+.about-image img {
+  height: 100%;
+}
+
+.about-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 49px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.about-content h2 em {
+  color: var(--gold);
+}
+
+.about-content p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+.signature {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+/* SERVICES */
+
+.services {
+  background: #eee7dd;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  padding: 40px 30px;
+  background: var(--cream);
+  text-align: center;
+  border: 1px solid var(--line);
+  transition: .3s;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+  border-color: var(--gold);
+}
+
+.service-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+  color: var(--gold);
+  margin-bottom: 22px;
+}
+
+.service-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+/* FEATURE BANNER */
+
+.feature {
+  min-height: 430px;
+  background:
+    linear-gradient(rgba(20,17,14,.48), rgba(20,17,14,.55)),
+    url('https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1800') center 35%/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.feature-content {
+  max-width: 700px;
+}
+
+.feature h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(38px, 5vw, 65px);
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.feature p {
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+/* PROCESS */
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  text-align: center;
+}
+
+.process-card {
+  padding: 15px;
+}
+
+.process-card span {
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+}
+
+.process-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.process-card p {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+/* TESTIMONIAL */
+
+.testimonial {
+  background: #eee7dd;
+  text-align: center;
+}
+
+.testimonial blockquote {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(25px, 3.5vw, 39px);
+  font-style: italic;
+  line-height: 1.5;
+  max-width: 850px;
+  margin: auto;
+}
+
+.testimonial-author {
+  margin-top: 25px;
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* CONTACT */
+
+.contact {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 80px;
+}
+
+.contact-info h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.contact-info p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 2;
+  margin-bottom: 25px;
+}
+
+.contact-detail {
+  margin-top: 18px;
+  font-size: 13px;
+}
+
+.contact-detail strong {
+  display: block;
+  color: var(--gold);
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 7px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 17px;
+  border: 1px solid var(--line);
+  background: transparent;
+  outline: none;
+  font-family: inherit;
+  font-size: 13px;
+  color: var(--dark);
+  border-radius: 0;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: var(--gold);
+}
+
+.contact-form textarea {
+  height: 130px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 18px;
+  border: none;
+  background: var(--dark);
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 11px;
+  transition: .3s;
+}
+
+.contact-form button:hover {
+  background: var(--gold);
+}
+
+/* FOOTER */
+
+footer {
+  background: var(--dark);
+  color: var(--cream);
+  padding: 60px 7% 25px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+}
+
+.footer-logo span {
+  color: var(--gold);
+}
+
+.footer-top p {
+  font-size: 12px;
+  color: #b5aea5;
+  margin-top: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 25px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #49433c;
+  padding-top: 23px;
+  display: flex;
+  justify-content: space-between;
+  color: #a49c92;
+  font-size: 10px;
+}
+
+/* WHATSAPP FLOAT */
+
+.whatsapp {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #258b5a;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  z-index: 999;
+  box-shadow: 0 5px 20px #0002;
+  transition: .3s;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 900px) {
+  .nav-links {
+    gap: 18px;
+  }
+
+  .hero {
+    gap: 30px;
+  }
+
+  .collection-grid {
+    gap: 15px;
+  }
+
+  .collection-image {
+    height: 330px;
+  }
+
+  .about {
+    gap: 40px;
+  }
+
+  .contact {
+    gap: 40px;
+  }
+}
+
+@media(max-width: 650px) {
+  header {
+    height: 70px;
+    padding: 0 6%;
+  }
+
+  .logo {
+    font-size: 23px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 30px 6%;
+    background: var(--cream);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 55px 6%;
+    gap: 40px;
+  }
+
+  .hero h1 {
+    font-size: 55px;
+  }
+
+  .hero-image {
+    height: 430px;
+  }
+
+  .image-caption {
+    left: 0;
+  }
+
+  section {
+    padding: 75px 6%;
+  }
+
+  .collection-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 22px 13px;
+  }
+
+  .collection-image {
+    height: 270px;
+  }
+
+  .collection-info h3 {
+    font-size: 17px;
+  }
+
+  .collection-info span {
+    font-size: 8px;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .about-image {
+    height: 420px;
+  }
+
+  .about-content h2,
+  .contact-info h2 {
+    font-size: 40px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature {
+    min-height: 390px;
+    padding: 40px 6%;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 10px;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 17px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .secondary-btn {
+    margin-left: 10px;
+  }
+}
+
+@media(max-width: 360px) {
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .collection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-image {
+    height: 350px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="#" class="logo">SAMILO<span>.</span></a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+    ☰
+  </button>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#collection">Collections</a>
+    <a href="#about">Our Story</a>
+    <a href="#services">Services</a>
+    <a href="#contact" class="nav-cta">Book a Consultation</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">Contemporary African Couture</div>
+
+    <h1>Elegance is an art. <em>Wear yours.</em></h1>
+
+    <p class="hero-description">
+      Discover a world where African heritage meets modern sophistication.
+      Every piece is thoughtfully designed to celebrate your individuality.
+    </p>
+
+    <a href="#collection" class="primary-btn">Explore Collection</a>
+    <a href="#about" class="secondary-btn">Our Story</a>
+  </div>
+
+  <div class="hero-image">
+    <img
+      src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1000"
+      alt="Elegant fashion editorial"
+    >
+    <div class="image-caption">Designed with intention.</div>
+  </div>
+</section>
+
+<!-- BRAND MARQUEE -->
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span>TIMELESS DESIGN <b>✦</b></span>
+    <span>AFRICAN HERITAGE <b>✦</b></span>
+    <span>MODERN COUTURE <b>✦</b></span>
+    <span>MADE FOR YOU <b>✦</b></span>
+    <span>TIMELESS DESIGN <b>✦</b></span>
+    <span>AFRICAN HERITAGE <b>✦</b></span>
+    <span>MODERN COUTURE <b>✦</b></span>
+    <span>MADE FOR YOU <b>✦</b></span>
+  </div>
+</div>
+
+<!-- COLLECTION -->
+
+<section class="collection" id="collection">
+  <div class="section-heading">
+    <div class="eyebrow">Curated for you</div>
+    <h2>The Collection</h2>
+    <p>Pieces that make a statement without saying a word.</p>
+  </div>
+
+  <div class="collection-grid">
+
+    <article class="collection-card">
+      <div class="collection-image">
+        <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=800" alt="Elegant evening dress" loading="lazy">
+      </div>
+      <div class="collection-info">
+        <h3>Evening Elegance</h3>
+        <span>01 / Couture</span>
+      </div>
+    </article>
+
+    <article class="collection-card">
+      <div class="collection-image">
+        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800" alt="Luxury modern fashion" loading="lazy">
+      </div>
+      <div class="collection-info">
+        <h3>Modern Muse</h3>
+        <span>02 / Ready-to-wear</span>
+      </div>
+    </article>
+
+    <article class="collection-card">
+      <div class="collection-image">
+        <img src="https://images.unsplash.com/photo-1566206091558-7f218b696731?w=800" alt="Fashion designer creation" loading="lazy">
+      </div>
+      <div class="collection-info">
+        <h3>Heritage Edit</h3>
+        <span>03 / African wear</span>
+      </div>
+    </article>
+
+    <article class="collection-card">
+      <div class="collection-image">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800" alt="Contemporary fashion look" loading="lazy">
+      </div>
+      <div class="collection-info">
+        <h3>Everyday Luxury</h3>
+        <span>04 / Lifestyle</span>
+      </div>
+    </article>
+
+    <article class="collection-card">
+      <div class="collection-image">
+        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800" alt="Modern fashion styling" loading="lazy">
+      </div>
+      <div class="collection-info">
+        <h3>Signature Style</h3>
+        <span>05 / Exclusive</span>
+      </div>
+    </article>
+
+    <article class="collection-card">
+      <div class="collection-image">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=800" alt="Fashion editorial collection" loading="lazy">
+      </div>
+      <div class="collection-info">
+        <h3>New Perspectives</h3>
+        <span>06 / Seasonal</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+  <div class="about-image">
+    <img
+      src="https://images.unsplash.com/photo-1550614000-4895a10e1bfd?w=1000"
+      alt="Fashion studio and design"
+      loading="lazy"
+    >
+  </div>
+
+  <div class="about-content">
+    <div class="eyebrow">The Atelier Story</div>
+
+    <h2>Fashion is personal. <em>Style is forever.</em></h2>
+
+    <p>
+      At Atelier Nia, we believe clothing should be more than something
+      you wear. It should tell your story, express your confidence and
+      celebrate who you are.
+    </p>
+
+    <p>
+      Inspired by African culture and contemporary fashion, we create
+      thoughtful designs that bring together craftsmanship, creativity
+      and individuality.
+    </p>
+
+    <p>
+      From bespoke occasion wear to everyday statement pieces,
+      every creation begins with a vision — yours.
+    </p>
+
+    <div class="signature">Atelier Nia</div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+  <div class="section-heading">
+    <div class="eyebrow">What we create</div>
+    <h2>Our Services</h2>
+    <p>Personalised fashion experiences, crafted around you.</p>
+  </div>
+
+  <div class="services-grid">
+
+    <div class="service-card">
+      <div class="service-number">01</div>
+      <h3>Bespoke Tailoring</h3>
+      <p>
+        Custom-made outfits carefully designed and tailored
+        to your measurements, taste and personality.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-number">02</div>
+      <h3>Occasion Wear</h3>
+      <p>
+        Distinctive outfits for weddings, celebrations,
+        special events and unforgettable moments.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-number">03</div>
+      <h3>Fashion Consultation</h3>
+      <p>
+        Get personalised style guidance, fabric suggestions
+        and creative direction for your next look.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FEATURE -->
+
+<section class="feature">
+  <div class="feature-content">
+    <div class="eyebrow">Your style. Your story.</div>
+    <h2>Made to be seen.<br>Designed to be remembered.</h2>
+    <p>Let's create something extraordinary together.</p>
+    <a href="#contact" class="primary-btn">Start Your Design</a>
+  </div>
+</section>
+
+<!-- PROCESS -->
+
+<section class="process">
+  <div class="section-heading">
+    <div class="eyebrow">The experience</div>
+    <h2>From Vision to Creation</h2>
+    <p>A thoughtful process from your first idea to your finished outfit.</p>
+  </div>
+
+  <div class="process-grid">
+
+    <div class="process-card">
+      <span>01</span>
+      <h3>Consultation</h3>
+      <p>Share your ideas, inspiration and the occasion.</p>
+    </div>
+
+    <div class="process-card">
+      <span>02</span>
+      <h3>Design</h3>
+      <p>We develop a design that reflects your vision.</p>
+    </div>
+
+    <div class="process-card">
+      <span>03</span>
+      <h3>Craftsmanship</h3>
+      <p>Your outfit is carefully created with attention to detail.</p>
+    </div>
+
+    <div class="process-card">
+      <span>04</span>
+      <h3>Delivery</h3>
+      <p>Receive a creation made to celebrate your style.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+
+<section class="testimonial">
+  <div class="eyebrow">Kind words</div>
+
+  <blockquote>
+    "The attention to detail, the fit and the entire experience
+    were beyond what I imagined. I finally found a style that feels like me."
+  </blockquote>
+
+  <div class="testimonial-author">
+    A Happy Client — Sample Testimonial
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+  <div class="contact-info">
+    <div class="eyebrow">Let's create together</div>
+
+    <h2>Your next favourite outfit starts here.</h2>
+
+    <p>
+      Have a design in mind? Looking for something unique?
+      Tell us about it and let's bring your vision to life.
+    </p>
+
+    <div class="contact-detail">
+      <strong>LOCATION</strong>
+      Lagos, Nigeria
+    </div>
+
+    <div class="contact-detail">
+      <strong>EMAIL</strong>
+      hello@atel ier nia.com
+    </div>
+
+    <div class="contact-detail">
+      <strong>WORKING HOURS</strong>
+      Monday – Saturday, 9 AM – 6 PM
+    </div>
+  </div>
+
+  <form class="contact-form" id="contactForm">
+
+    <input type="text" id="name" placeholder="Your full name" required>
+
+    <input type="email" id="email" placeholder="Your email address" required>
+
+    <select id="service" required>
+      <option value="">What are you interested in?</option>
+      <option>Bespoke Tailoring</option>
+      <option>Occasion Wear</option>
+      <option>Fashion Consultation</option>
+      <option>Other Enquiry</option>
+    </select>
+
+    <textarea id="message" placeholder="Tell us about your dream outfit..." required></textarea>
+
+    <button type="submit">Send Enquiry via WhatsApp</button>
+
+  </form>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="footer-top">
+
+    <div>
+      <div class="footer-logo">SAMILO <span>.</span></div>
+      <p>Contemporary African fashion. Timeless expression.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#collection">Collections</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> SAMILO. All rights reserved.</span>
+    <span>Designed with intention.</span>
+  </div>
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+
+<a href="https://wa.me/2348000000000"
+   class="whatsapp"
+   target="_blank"
+   rel="noopener"
+   aria-label="Chat with us on WhatsApp">
+  W
+</a>
+
+<script>
+
+// MOBILE NAVIGATION
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("active");
+  menuToggle.setAttribute("aria-expanded", isOpen);
+  menuToggle.textContent = isOpen ? "×" : "☰";
+});
+
+// CLOSE MENU AFTER CLICK
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.textContent = "☰";
+  });
+});
+
+// AUTOMATIC COPYRIGHT YEAR
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+// WHATSAPP CONTACT FORM
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const service = document.getElementById("service").value;
+  const message = document.getElementById("message").value.trim();
+
+  if (!name || !email || !service || !message) {
+    alert("Please complete all fields.");
+    return;
+  }
+
+  const phone = "2348000000000";
+
+  const text =
+    "Hello SAMILO!%0A%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Email: " + encodeURIComponent(email) + "%0A" +
+    "Service: " + encodeURIComponent(service) + "%0A" +
+    "Message: " + encodeURIComponent(message);
+
+  const whatsappURL = "https://wa.me/" + phone + "?text=" + text;
+
+  window.open(whatsappURL, "_blank");
+
+});
+
+</script>
+
+</body>
+</html>
